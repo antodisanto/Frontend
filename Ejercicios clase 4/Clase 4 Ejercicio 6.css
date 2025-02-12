@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9cb;
+  }
+  ul {
+    list-style-type: none; /* Quitar los marcadores predeterminados */
+    padding: 0;
+  }
+  li {
+    font-size: 24px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.881);
+    display: inline-block;
+  }
+  .manzana { background-color: #ff4c4c; } /* Rojo */
+  .banana { background-color: #ffe135; } /* Amarillo */
+  .kiwi { background-color: #76b947; } /* Verde */
+  .uva { background-color: #9b59b6; } /* Morado */
+  .naranja { background-color: #ffa500; } /* Naranja */
+  .sandia { background-color: #ff6f61; } /* Rosa rojizo */
+  .limon { background-color: #f7f700; } /* Amarillo limón */
+  .fresa { background-color: #ff4f81; } /* Rosa oscuro */
+  .cereza { background-color: #d00000; } /* Rojo oscuro */
+  .mango { background-color: #ffcc33; } /* Naranja brillante */

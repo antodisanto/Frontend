@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  .izquierda {
+    text-align: left; /* Alineación a la izquierda */
+  }
+  .centro {
+    text-align: center; /* Alineación al centro */
+  }
+  .derecha {
+    text-align: right; /* Alineación a la derecha */
+  }
+  p {
+    font-size: 24px;
+    margin: 10px 0;
+  }

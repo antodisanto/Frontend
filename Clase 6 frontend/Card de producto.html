@@ -1,0 +1,54 @@
+import { useState } from "react";
+
+export default function ProductCard() {
+  const [comprado, setComprado] = useState(false);
+  const handleClick = () => setComprado(true);
+
+  return (
+    <div className="flex items-center justify-center min-h-screen bg-gray-300">
+      <div className="w-96 bg-[#0b1622] text-white rounded-lg shadow-lg overflow-hidden">
+        
+        {/* Imagen del producto */}
+        <div className="bg-[#c8102e] flex justify-center items-center p-4">
+          <img src="cascodemoto.avif"
+            alt="Stormtrooper Helmet"
+            className="w-40 h-auto"
+          />
+        </div>
+        
+        {/* Contenido de la tarjeta */}
+        <div className="p-6 text-center">
+          <h1 className="text-2xl font-bold">STORMTROOPER HELMET</h1>
+          
+          {/* Etiquetas */}
+          <div className="flex justify-center space-x-2 my-4">
+            <span className="border border-white px-3 py-1 text-xs rounded-full">STAR WARS</span>
+            <span className="border border-white px-3 py-1 text-xs rounded-full">MERCHANDISING</span>
+            <span className="border border-white px-3 py-1 text-xs rounded-full">SCI FI</span>
+          </div>
+          
+          {/* Descripción */}
+          <h3 className="text-sm font-bold mt-4">DESCRIPCIÓN</h3>
+          <p className="text-sm mt-2">
+            Casco de Stormtrooper con diseño detallado y materiales de alta calidad.
+            Perfecto para coleccionistas y fanáticos de Star Wars.
+          </p>
+          
+          {/* Precio */}
+          <h3 className="text-sm font-bold mt-4">PRECIO</h3>
+          <p className="text-2xl font-semibold mt-2">$1,299.99</p>
+          
+          {/* Botón de compra */}
+          <button
+            className={`mt-4 w-full py-2 text-white font-bold rounded-lg transition-all duration-200 ${
+              comprado ? "bg-green-500 cursor-default" : "bg-[#c8102e] hover:bg-red-600 active:scale-90"
+            }`}
+            onClick={handleClick}
+          >
+            {comprado ? "¡Comprado!" : "COMPRAR"}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -1,0 +1,48 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Tipografía distinta */
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  h1 {
+    font-size: 36px; /* Tamaño de fuente para el título principal */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 28px; /* Tamaño de fuente para los títulos de las paletas */
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  ul {
+    list-style-type: none; /* Quitar los marcadores predeterminados */
+    padding: 0;
+  }
+  li {
+    font-size: 16px; /* Tamaño de fuente para los ítems */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: white;
+  }
+  /* Paleta 1: Hexadecimal */
+  .hex-1 { background-color: #FF5733; } /* Naranja */
+  .hex-2 { background-color: #33FF57; } /* Verde */
+  .hex-3 { background-color: #3357FF; } /* Azul */
+  .hex-4 { background-color: #FF33A8; } /* Rosa */
+  .hex-5 { background-color: #FFD133; color: black; } /* Amarillo */
+  
+  /* Paleta 2: RGB */
+  .rgb-1 { background-color: rgb(255, 0, 0); } /* Rojo */
+  .rgb-2 { background-color: rgb(0, 255, 0); } /* Verde */
+  .rgb-3 { background-color: rgb(0, 0, 255); } /* Azul */
+  .rgb-4 { background-color: rgb(255, 255, 0); color: black; } /* Amarillo */
+  .rgb-5 { background-color: rgb(128, 0, 128); } /* Púrpura */
+  
+  /* Paleta 3: HSL */
+  .hsl-1 { background-color: hsl(0, 100%, 50%); } /* Rojo */
+  .hsl-2 { background-color: hsl(120, 100%, 40%); } /* Verde oscuro */
+  .hsl-3 { background-color: hsl(240, 100%, 50%); } /* Azul */
+  .hsl-4 { background-color: hsl(60, 100%, 50%); color: black; } /* Amarillo */
+  .hsl-5 { background-color: hsl(300, 100%, 50%); } /* Magenta */ 

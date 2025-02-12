@@ -1,0 +1,34 @@
+ body {
+     font-family: 'Arial', Arial, Helvetica, sans-serif;
+     text-align: center;
+     margin: 50px;
+ }
+
+ h1 {
+     font-size: 120px;
+     font-weight: 900;
+     color: #af744c;
+     /* Color personalizado para el nombre */
+ }
+
+ p {
+     font-size: 48px;
+     font-weight: 700;
+     line-height: 1.5;
+ }
+
+ .color1 {
+     color: #e535d7;
+ }
+
+ /* Color 1 para palabras clave */
+ .color2 {
+     color: #2ee0ffe4;
+ }
+
+ /* Color 2 para palabras clave */
+ .color3 {
+     color: #eeee00;
+ }
+
+ /* Color 3 para palabras clave */

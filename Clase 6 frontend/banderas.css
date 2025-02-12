@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f3f388;
+}
+.bandera {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+.horizontal {
+    flex-direction: column;
+}
+.vertical {
+    flex-direction: row;
+}
+.franja {
+    flex: 1;
+}
+/* Argentina */
+.argentina .franja:nth-child(1), .argentina .franja:nth-child(3) {
+    background-color: #74acdf;
+}
+.argentina .franja:nth-child(2) {
+    background-color: white;
+}
+/* Alemania */
+.alemania .franja:nth-child(1) { background-color: black; }
+.alemania .franja:nth-child(2) { background-color: red; }
+.alemania .franja:nth-child(3) { background-color: yellow; }
+/* Francia */
+.francia .franja:nth-child(1) { background-color: blue; }
+.francia .franja:nth-child(2) { background-color: white; }
+.francia .franja:nth-child(3) { background-color: red; }
+/* Italia */
+.italia .franja:nth-child(1) { background-color: green; }
+.italia .franja:nth-child(2) { background-color: white; }
+.italia .franja:nth-child(3) { background-color: red; }
+/* Irlanda */
+.irlanda .franja:nth-child(1) { background-color: green; }
+.irlanda .franja:nth-child(2) { background-color: white; }
+.irlanda .franja:nth-child(3) { background-color: rgb(255, 128, 0); }
+/* Mónaco */
+.mónaco .franja:nth-child(1) { background-color: red; }
+.mónaco .franja:nth-child(2) { background-color: white;}
+

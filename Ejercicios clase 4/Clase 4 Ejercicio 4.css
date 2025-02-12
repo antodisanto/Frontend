@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f6fdc8; /* Color de fondo claro */
+    font-family: Arial, sans-serif;
+  }
+  .paisaje {
+    display: flex;
+    gap: 10px;
+  }
+  .paisaje span {
+    font-size: calc(20px + 1vw); /* Tamaño dinámico */
+    line-height: 1;
+  }
+  .emoji-1 { font-size: 70px; }
+  .emoji-2 { font-size: 20px; }
+  .emoji-3 { font-size: 540px; }
+  .emoji-4 { font-size: 80px; }
+  .emoji-5 { font-size: 405px; }
+  .emoji-6 { font-size: 345px; }
+  .emoji-7 { font-size: 60px; }
+  .emoji-8 { font-size: 28px; }
+  .emoji-9 { font-size: 55px; }
+  .emoji-10 { font-size: 32px; }

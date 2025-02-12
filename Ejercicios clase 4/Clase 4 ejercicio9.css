@@ -1,0 +1,41 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Tipografía distinta a la default */
+    margin: 20px;
+    line-height: 1.6;
+    color: #333;
+  }
+  h1 {
+    font-size: 36px; /* Tamaño de fuente distinto al default */
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 28px; /* Tamaño de fuente distinto al default */
+    margin-bottom: 15px;
+    color: #555;
+  }
+  h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #222;
+  }
+  .movimiento {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  .fecha {
+    font-size: 14px; /* Tamaño de letra más pequeño */
+    color: #aaa; /* Color gris claro */
+  }
+  .monto {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .positivo {
+    color: green; /* Color verde para ingresos */
+  }
+  .negativo {
+    color: red; /* Color rojo para salidas */
+  }

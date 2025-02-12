@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style-type: none; /* Quitar los marcadores de la lista */
+    padding: 0;
+  }
+  li {
+    font-size: 24px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: normal;
+  }
+  .temp-0 { background-color: #0000ff; font-weight: bold; } /* Azul oscuro */
+  .temp-5 { background-color: #0033ff; } /* Azul intermedio */
+  .temp-10 { background-color: #0066ff; } /* Azul claro */
+  .temp-15 { background-color: #0099ff; } /* Cian */
+  .temp-20 { background-color: #00ccff; } /* Azul cielo */
+  .temp-25 { background-color: #00ffff; } /* Turquesa */
+  .temp-30 { background-color: #ffcc00; } /* Amarillo */
+  .temp-35 { background-color: #ff9900; } /* Naranja claro */
+  .temp-40 { background-color: #ff6600; } /* Naranja intenso */
+  .temp-45 { background-color: #ff3300; } /* Rojo anaranjado */
+  .temp-50 { background-color: #ff0000; font-weight: bold; } /* Rojo oscuro */
