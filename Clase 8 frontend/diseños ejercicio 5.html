@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores Responsivos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            background-color: lightblue;
+            font-family: 'Montserrat', sans-serif;
+            transition: background-color 0.3s ease;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            background-color: darkblue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        .menu-icon {
+            display: none;
+            color: white;
+            font-size: 24px;
+        }
+
+        @media (max-width: 700px) {
+            nav ul {
+                display: none;
+            }
+            .menu-icon {
+                display: block;
+            }
+        }
+
+        h1 {
+            font-size: 40px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        .service {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .service i {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .product-card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-card h2 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            font-size: 16px;
+            color: gray;
+        }
+
+        .product-card button {
+            background-color: darkblue;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 900px) and (min-width: 600px) {
+            body {
+                background-color: lightcoral;
+            }
+            h1 {
+                font-size: 32px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background-color: lightgreen;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .services {
+                flex-direction: column;
+                align-items: flex-start;
+                width: 80%;
+            }
+            .service {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+                margin-bottom: 20px;
+            }
+            .service i {
+                margin-bottom: 5px;
+            }
+            .product-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Sobre mí</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <h1>¡Mírame cambiar de color!</h1>
+    <section class="services">
+        <div class="service">
+            <i class="fas fa-code"></i>
+            <p>Desarrollo Web</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-paint-brush"></i>
+            <p>Diseño Gráfico</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-chart-line"></i>
+            <p>Marketing Digital</p>
+        </div>
+    </section>
+    <section class="product-card">
+        <img src="https://via.placeholder.com/300" alt="Producto">
+        <h2>Producto Destacado</h2>
+        <p>Descripción breve del producto.</p>
+        <button>Comprar Ahora</button>
+    </section>
+</body>
+</html>

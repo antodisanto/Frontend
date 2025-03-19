@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Personal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="#presentacion">Presentación</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#cita">Cita</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="presentacion">
+            <h1>¡Hola! Soy Antonela Di Santo Cocco </h1>
+            <p>Desarrolladora web de Frontend apasionada por la creatividad y la tecnología.</p>
+        </section>
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ul>
+        </section>
+        <section id="cita">
+            <blockquote>"La creatividad es la inteligencia divirtiéndose." – Albert Einstein</blockquote>
+        </section>
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="grid">
+                <div class="card"><a href="https://github.com/antodisanto/Frontend">Proyecto 1</a>
+                    <img src="./Imagenes/imagen 1.png"></div>
+                <div class="card"><a href="https://github.com/antodisanto/AdaIntegrador">Proyecto 2</a></div>
+
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/example" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#header">Inicio</a></li>
+                <li><a href="https://github.com/antodisanto" target="_blank">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/antonela-di-santo-cocco-165637344" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+        <p>© 2025 [Antonela Di Santo Cocco]. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+	/* Estilos CSS para una mejor visualización */
+		.caja1, .caja2, .caja3, .caja4 {
+	    	margin: 20px 0 0 0;
+	    	padding: 15px;	
+		}
+        .caja1 {
+            background-color: rgb(253, 245, 0);
+        }
+        .caja2 {
+            background-color: rgb(172, 255, 90);
+        }
+        .caja3 {
+            background: rgb(247, 134, 153);
+        }
+        .caja4 {
+            background: rgb(104, 204, 244);
+        }
+    </style>
+</head>
+<body>
+	<div class="container">
+	    <div class="row">
+	        <div class="col">
+            	<div class="d-flex">
+                	<div class="caja1">Caja 1</div>
+                	<div class="caja2">Caja 2</div>
+                	<div class="caja3">Caja 3</div>
+            	</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+</body>
+</html>
