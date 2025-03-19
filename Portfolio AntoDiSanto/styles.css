@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #fff5b1;
     color: #333;
 }
 
@@ -49,7 +49,7 @@ section {
     text-align: center;
 }
 .card img {
-    max-width: 100%; /* Para que la imagen no sobrepase el ancho de la tarjeta */
+    max-width: 80%; /* Para que la imagen no sobrepase el ancho de la tarjeta */
     height: auto; /* Mantiene la proporción de la imagen */
     max-height: 200px; /* Ajusta la altura máxima según tu preferencia */
     object-fit: contain; /* Asegura que la imagen se ajuste sin deformarse */
@@ -68,3 +68,10 @@ footer {
         flex-direction: column;
     }
 }
+#habilidades img {
+    max-width: 250px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción */
+    display: ruby-base-container; /* Evita espacios en línea innecesarios */
+    margin: 10px auto; /* Centra la imagen */
+}
+
