@@ -17,7 +17,7 @@
   .about-name {
     margin-top: 0;
     margin-bottom: 5px;
-    color: #8338ec;
+    color: #ec38a4;
   }
   
   .about-description {
@@ -28,7 +28,7 @@
   
   .about-section {
     min-height: calc(100vh - 90px);
-    margin-top: 90px;
+    margin-top: 95px;
   }
   
   .about-info {
@@ -41,11 +41,11 @@
   }
   
   .about-img {
-    max-width: 500px;
+    max-width: 550px;
   }
   
   .button {
-    background-color: #8338ec;
+    background-color: #4438ec;
     color: white;
     padding: 15px 40px;
     border-radius: 100px;

@@ -46,7 +46,7 @@
   }
   
   .contact-social-link:hover .contact-social-icon {
-    background-color: #8338ec;
+    background-color: #38ec9b;
     color: #fff;
   }
   
@@ -62,7 +62,7 @@
     width: 2.2rem;
     height: 2.2rem;
     background-color: #fff;
-    color: #8338ec;
+    color: #38b3ec;
     border-radius: 50%;
     font-size: 1.2rem;
     line-height: 2.2rem;
@@ -98,22 +98,22 @@
   
   input:valid:focus,
   textarea:valid:focus {
-    box-shadow: 0px 0px 5px #88c459;
+    box-shadow: 0px 0px 5px #acfb70;
   }
   
   input:invalid:not(:placeholder-shown):focus,
   textarea:invalid:not(:placeholder-shown):focus {
-    box-shadow: 0px 0px 5px #f5414f;
+    box-shadow: 0px 0px 5px #f541a7;
   }
   
   input:invalid:not(:placeholder-shown),
   textarea:invalid:not(:placeholder-shown) {
-    border: 1px solid #f5414f;
+    border: 1px solid #f65562;
   }
   
   input:valid,
   textarea:valid {
-    border: 1px solid #88c459;
+    border: 1px solid #57bf8b;
   }
   
   .icon-invalid,
@@ -126,11 +126,11 @@
   }
   
   .icon-valid {
-    color: #88c459;
+    color: #a7e396;
   }
   
   .icon-invalid {
-    color: #f5414f;
+    color: #d61c2b;
   }
   
   input:valid ~ .icon-valid,
