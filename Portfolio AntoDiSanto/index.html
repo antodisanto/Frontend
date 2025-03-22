@@ -1,118 +1,345 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Personal</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Portfolio personal de Ada Lovelace" />
+        <title>Ada Lovelace</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap"
+            rel="stylesheet" preload />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet" preload />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" preload />
+        <link rel="stylesheet"
+            href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" preload />
+    
+        <link rel="stylesheet" href="styles/base.css" preload />
+        <link rel="stylesheet" href="styles/layout.css" preload />
+        <link rel="stylesheet" href="styles/header.css" preload />
+        <link rel="stylesheet" href="styles/footer.css" preload />
+        <link rel="stylesheet" href="styles/about.css" preload />
+        <link rel="stylesheet" href="styles/quote.css" preload />
+        <link rel="stylesheet" href="styles/skills.css" preload />
+        <link rel="stylesheet" href="styles/contact.css" preload />
+        <link rel="stylesheet" href="styles/projects.css" preload />
+    </head>
 <body>
-    <header id="header">
-        <nav>
-            <ul>
-                <li><a href="#presentacion">Presentación</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#cita">Cita</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+    <header>
+        <div class="column menu-icon-container">
+          <nav class="nav-header">
+            <!-- Menú de navegación -->
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="#about" class="nav-link">Presentación</a>
+              </li>
+              <li class="nav-item">
+                <a href="#skills" class="nav-link">Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a href="#projects" class="nav-link">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link selected">Contacto</a>
+              </li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="presentacion">
-            <h1>¡Hola! Soy Antonela Di Santo Cocco </h1>
-            <p>Desarrolladora web de Frontend apasionada por la creatividad y la tecnología.</p>
-            <img src="./Imagenes/imagen 3.avif"></div>
-        </section>
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <ul>
-                <img src="./Imagenes/imagen 5.png"></div>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-            </ul>
-        </section>
-        <section id="cita">
-            <blockquote>"La creatividad es la inteligencia divirtiéndose." – Albert Einstein</blockquote>
-        </section>
-        <section id="proyectos">
-            <h2>Proyectos</h2>
-            <div class="grid">
-                <div class="card"><a href="https://github.com/antodisanto/Frontend">Proyecto 1</a>
-                    <img src="./Imagenes/imagen 1.png"></div>
-                <div class="card"><a href="https://github.com/antodisanto/AdaIntegrador">Proyecto 2</a>
-                    <img src="./Imagenes/imagen 2.png"></div>
-
+            <!-- Fin menú de navegación -->
+          </nav>
+        </div>
+      </header>
+      <!-- ##### Final Header ##### -->
+    <!-- ##### Comienzo Sección Sobre mí ##### -->
+    <section class="section about-section" id="about">
+        <div class="column main-content">
+          <div class="about-info">
+            <p class="greeting name">¡Hola! Soy </p>
+            <h1 class="about-name">Antonela Di Santo Cocco</h1>
+            <p class="about-description">
+              Desarrolladora web de Frontend apasionada por la creatividad y la tecnología.
+            </p>
+            <a href="#projects" class="button">Lo que hago...</a>
+          </div>
+          <img src="images/software-engineer.svg" alt="" class="about-img" />
+        </div>
+      </section>
+      <!-- ##### Final Sección Sobre mí ##### -->
+  
+      <!-- ##### Comienzo Sección Conocimientos ##### -->
+      <section class="section skills-section" id="skills">
+        <div class="column content">
+          <h2 class="section-title">Mis conocimientos</h2>
+          <p class="skills-description">
+            Soy una desarrolladora web de Frontend, con conocimientos en JavaScript, HTML y GitHub.
+            Me encanta la tecnología y aprender cada día cosas nuevas de este maravilloso mundo.
+          </p>
+          <div class="grid skills-grid">
+            <div class="skill grid-item">
+              <i class="devicon-html5-plain colored skill-icon"></i>
+              <p class="skill-title">HTML 5</p>
             </div>
-        </section>
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <form action="https://formspree.io/f/example" method="POST">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="#header">Inicio</a></li>
-                <li><a href="https://github.com/antodisanto" target="_blank">GitHub</a></li>
-                <li><a href="https://linkedin.com/in/antonela-di-santo-cocco-165637344" target="_blank">LinkedIn</a></li>
-            </ul>
+            <div class="skill grid-item">
+              <i class="devicon-css3-plain colored skill-icon"></i>
+              <p class="skill-title">CSS 3</p>
+            </div>
+            <div class="skill grid-item">
+              <i class="devicon-javascript-plain colored skill-icon"></i>
+              <p class="skill-title">JavaScript</p>
+            </div>
+            <div class="skill grid-item">
+              <i class="devicon-git-plain colored skill-icon"></i>
+              <p class="skill-title">GIT</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ##### Fin Sección Conocimientos ##### -->
+  
+      <!-- ##### Comienzo Sección Projectos ##### -->
+      <section class="section quote-section">
+        <div class="column content">
+          <i class="fas fa-quote-right quote-icon"></i>
+          <blockquote>
+            <p class="quote">
+              La creatividad es la inteligencia divirtiéndose."
+            </p>
+          </blockquote>
+          <h2 class="quote-author">Albert Einstein</h2>
+        </div>
+      </section>
+      <section class="section project-section" id="projects">
+        <div class="column content">
+          <h2 class="section-title">Mis proyectos</h2>
+          <p class="section-description">
+            Te invito a conocer sobre algunos de mis proyectos.
+          </p>
+          <!-- Grilla de projectos -->
+          <div class="grid">
+              <div class="card"><a href="https://github.com/antodisanto/Frontend">Proyecto 1</a>
+                  <img src="./imagenes/imagen1.png"></div>
+              <div class="card"><a href="https://github.com/antodisanto/AdaIntegrador">Proyecto 2</a>
+                  <img src="./imagenes/imagen2.png"></div>
+  
+          </div>
+          <!-- Fin Grilla de projectos -->
+        </div>
+      </section>
+      <!-- ##### Fin Secci´ón Projectos ##### -->
+  
+      <!-- ##### Comienzo Secci´ón Contacto ##### -->
+      <section class="section contact-section" id="contact">
+        <div class="column">
+          <div class="contact">
+            <section class="contact-column">
+              <h2 class="section-title">Contactame</h2>
+              <p class="section-description">
+            Para conocerme escribime
+              </p>
+              <!-- Poner links href -->
+              <section aria-label="Links de redes sociales">
+                <ul class="contact-social-links">
+                  <li class="contact-social-item">
+                    <a
+                      href=""
+                      class="contact-social-link twitter-link"
+                      aria-label="Twitter"
+                    >
+                      <i
+                        aria-hidden="true"
+                        class="fab fa-twitter contact-social-icon"
+                      ></i
+                      >@AdaLovelace</a
+                    >
+                  </li>
+                  <li class="contact-social-item">
+                    <a
+                      href=""
+                      class="contact-social-link github-link"
+                      aria-label="Github"
+                    >
+                      <i
+                        aria-hidden="true"
+                        class="fab fa-github-alt contact-social-icon"
+                      ></i
+                      >AdaLovelace</a
+                    >
+                  </li>
+                  <li class="contact-social-item">
+                    <a
+                      href=""
+                      class="contact-social-link linkedin-link"
+                      aria-label="Linkedin"
+                    >
+                      <i
+                        aria-hidden="true"
+                        class="fab fa-linkedin-in contact-social-icon"
+                      ></i
+                      >adalovelace</a
+                    >
+                  </li>
+                  <li class="contact-social-item">
+                    <a
+                      href=""
+                      class="contact-social-link email-link"
+                      aria-label="Email"
+                    >
+                      <i
+                        aria-hidden="true"
+                        class="fas fa-envelope contact-social-icon"
+                      ></i
+                      >antodisanto@gmail.com</a
+                    >
+                  </li>
+                </ul>
+              </section>
+            </section>
+            <section class="contact-column">
+              <h2 class="section-title">Escribime</h2>
+              <form
+                action="https://submit-form.com/dZv3lZKLnN2eByG6HXaMj"
+                method="POST"
+                class="contact-form"
+              >
+                <div class="input-name-wrapper">
+                  <div class="form-control">
+                    <label for="firstname">Nombre *</label>
+                    <input
+                      type="text"
+                      name="Nombre"
+                      id="firtsname"
+                      class="input-firtsname input-control"
+                      placeholder="p. ej.: Antonella"
+                      aria-label="Nombre"
+                      required
+                    />
+                    <i
+                      class="far fa-times-circle icon-invalid"
+                      aria-hidden="true"
+                    ></i>
+                    <i
+                      class="far fa-check-circle icon-valid"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  <div class="form-control">
+                    <label for="lastname">Apellido *</label>
+                    <input
+                      type="text"
+                      name="Apellido"
+                      id="lastname"
+                      class="input-lastname input-control"
+                      placeholder="p. ej.: Di Santo"
+                      aria-label="Apellido"
+                      required
+                    />
+                    <i
+                      class="far fa-times-circle icon-invalid"
+                      aria-hidden="true"
+                    ></i>
+                    <i
+                      class="far fa-check-circle icon-valid"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                </div>
+                <div class="form-control">
+                  <label for="email">Email *</label>
+                  <input
+                    type="email"
+                    name="Email"
+                    id="email"
+                    class="input-control"
+                    placeholder="p. ej.: antodisanto@gmail.com"
+                    aria-label="Email"
+                    required
+                  />
+                  <i
+                    class="far fa-times-circle icon-invalid"
+                    aria-hidden="true"
+                  ></i>
+                  <i
+                    class="far fa-check-circle icon-valid"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <div class="form-control">
+                  <label for="message">Mensaje *</label>
+                  <textarea
+                    name="Mensaje"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    class="input-control"
+                    placeholder="Escriba un mensaje aquí"
+                    aria-label="Mensaje"
+                    required
+                  ></textarea>
+                  <i
+                    class="far fa-times-circle icon-invalid"
+                    aria-hidden="true"
+                  ></i>
+                  <i
+                    class="far fa-check-circle icon-valid"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <button type="submit" class="contact-send-btn button">
+                  Enviar
+                </button>
+              </form>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- ##### Fin Sección Contacto ##### -->
+      <footer>
+        <!-- Navegación footer -->
+        <nav class="footer-nav">
+          <ul class="footer-nav-menu">
+            <li class="footer-nav-item">
+              <a href="#about" class="footer-nav-link">HOLA</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#skills" class="footer-nav-link">CONOCIMIENTOS</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#projects" class="footer-nav-link">PROYECTOS</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#contact" class="footer-nav-link">CONTACTO</a>
+            </li>
+          </ul>
         </nav>
-        <p>© 2025 [Antonela Di Santo Cocco]. Todos los derechos reservados.</p>
-    </footer>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <style>
-	/* Estilos CSS para una mejor visualización */
-		.caja1, .caja2, .caja3, .caja4 {
-	    	margin: 20px 0 0 0;
-	    	padding: 15px;	
-		}
-        .caja1 {
-            background-color: rgb(253, 245, 0);
-        }
-        .caja2 {
-            background-color: rgb(172, 255, 90);
-        }
-        .caja3 {
-            background: rgb(247, 134, 153);
-        }
-        .caja4 {
-            background: rgb(104, 204, 244);
-        }
-    </style>
-</head>
-<body>
-	<div class="container">
-	    <div class="row">
-	        <div class="col">
-            	<div class="d-flex">
-                	<div class="caja1">Caja 1</div>
-                	<div class="caja2">Caja 2</div>
-                	<div class="caja3">Caja 3</div>
-            	</div>
-			</div>
-		</div>
-	</div>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
+        <!-- Navegación footer -->
+        <ul class="footer-social-links">
+          <li class="footer-social-item">
+            <a
+              href=""
+              class="footer-social-link twitter-link"
+              aria-label="Twitter"
+            >
+              <i class="fab fa-twitter footer-social-icon"></i
+            ></a>
+          </li>
+          <li class="footer-social-item">
+            <a href="" class="footer-social-link github-link" aria-label="Github">
+              <i class="fab fa-github-alt footer-social-icon"></i
+            ></a>
+          </li>
+          <li class="footer-social-item">
+            <a
+              href=""
+              class="footer-social-link linkedin-link"
+              aria-label="Linkedin"
+            >
+              <i class="fab fa-linkedin-in footer-social-icon"></i
+            ></a>
+          </li>
+          <li class="footer-social-item">
+            <a href="" class="footer-social-link email-link" aria-label="Email">
+              <i class="fas fa-envelope footer-social-icon"></i
+            ></a>
+          </li>
+        </ul>
+        Hecho con ❤️ por Anto
+      </footer>
 </body>
 </html>
